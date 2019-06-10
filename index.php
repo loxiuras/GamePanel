@@ -17,6 +17,8 @@
         <?php require_once 'mvc/models/partials/header.php'; ?>
 
         <?php require_once 'mvc/models/partials/highlighted-products.php'; ?>
+
+        <?php require_once 'mvc/models/partials/footer.php'; ?>
     </div>
 
 </body>
