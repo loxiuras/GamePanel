@@ -5,7 +5,7 @@ const sass = require('gulp-sass');
 sass.compiler = require('node-sass');
 
 const stylesheetsDirectory = './assets/stylesheets/development/**/*.scss';
-const stylesheetsDestination = './assets/stylesheets//minified/';
+const stylesheetsDestination = './assets/stylesheets/minified/';
 
 function processStylesheets()
 {
