@@ -13,5 +13,9 @@
 </head>
 <body id="body">
 
+    <div id="site">
+        <?php require_once 'mvc/models/partials/header.php'; ?>
+    </div>
+
 </body>
 </html>
