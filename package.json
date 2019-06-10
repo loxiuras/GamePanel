@@ -1,0 +1,24 @@
+{
+  "name": "gamepanel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loxiuras/GamePanel.git"
+  },
+  "author": "Loxiuras",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loxiuras/GamePanel/issues"
+  },
+  "homepage": "https://github.com/loxiuras/GamePanel#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.12.0"
+  }
+}
