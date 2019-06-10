@@ -15,6 +15,8 @@
 
     <div id="site">
         <?php require_once 'mvc/models/partials/header.php'; ?>
+
+        <?php require_once 'mvc/models/partials/highlighted-products.php'; ?>
     </div>
 
 </body>

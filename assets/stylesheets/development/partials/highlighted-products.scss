@@ -1,0 +1,129 @@
+.highlighted-products {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+  }
+
+  &::before {
+    bottom: 0px;
+    left: -50px;
+    width: 400px;
+    height: 500px;
+    background-image: url(../../../assets/images/elite_slayers.png);
+  }
+
+  &::after {
+    top: 100px;
+    right: 25px;
+    width: 300px;
+    height: 500px;
+    background-image: url(../../../assets/images/ce-transmog-mobile.png);
+  }
+
+  .product-wrapper {
+    padding: 50px 0 65px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .title {
+      width: 100%;
+      text-align: center;
+      margin: 0 0 30px;
+      padding: 0 0 5px;
+      font-size: 28px;
+      font-weight: 300;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 200px;
+        height: 1px;
+        background-color: #feca57 ;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    .product {
+      width: 24%;
+      border: 1px solid #eeeeee;
+      position: relative;
+
+      .image-wrap {
+        width: 100%;
+        padding: 10px;
+
+        .image {
+          max-width: 100%;
+        }
+      }
+
+      .title-wrap {
+        width: 100%;
+        padding: 5px 0;
+        text-align: center;
+
+        .title-text {
+          font-size: 18px;
+          font-weight: 300;
+        }
+      }
+
+      .price-wrap {
+        width: 100%;
+        padding: 10px 0 20px;
+        text-align: center;
+
+        .price-text {
+          font-size: 16px;
+          font-weight: 500;
+        }
+      }
+
+      .limited-wrap {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        background-color: #feca57;
+        color: #000000;
+        padding: 5px;
+
+        .limited-text {
+          font-size: 12px;
+          font-weight: 300;
+        }
+      }
+
+      .rate-wrap {
+        position: absolute;
+        top: 0px;
+        right: 5px;
+        padding: 5px;
+        color: #000000;
+
+        .rate-icon {
+          font-size: 14px;
+
+          &.hidden {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
