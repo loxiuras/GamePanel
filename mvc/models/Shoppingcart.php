@@ -56,4 +56,17 @@ class Shoppingcart extends Session
     {
         $this->session[self::$shoppingCart][$this->articleNumber] = ['amount' => $amount];
     }
+
+    public function deleteProductFromShoppingCart( String $articleNumber )
+    {
+        $this->setAddedShoppingCartArticle( $articleNumber );
+        if($this->productExistsInShoppingCart()) {
+            $this->deleteArticle( $articleNumber );
+        }
+    }
+
+    public function deleteArticle( String $articleNumber )
+    {
+        unset($this->session[self::$shoppingCart][$articleNumber]);
+    }
 }
