@@ -138,6 +138,33 @@
           display: inline-block;
         }
       }
+
+      &.item-sale {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 0 10px 0 0;
+        padding: 0;
+
+        .nav__item-link {
+          padding: 5px 10px;
+          background-color: #feca57;
+          display: flex;
+          flex-flow: row wrap;
+          align-items: center;
+          justify-content: center;
+          color: #000000;
+          font-weight: 500;
+          font-size: 14px;
+
+          .nav__item-image {
+            max-width: 25px;
+            max-height: 25px;
+            margin-left: 10px;
+          }
+        }
+      }
     }
   }
 }

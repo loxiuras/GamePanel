@@ -12,8 +12,13 @@
             </div>
 
             <nav class="nav">
+                <div class="nav__item item-sale">
+                    <a href="" class="nav__item-link">
+                        Item box sale <img src="./assets/images/header/case.png" alt="Item case" class="nav__item-image" />
+                    </a>
+                </div>
                 <div class="nav__item login">
-                    <a href="" class="nav__item-link login" onclick="createLoginModal(event);">
+                    <a href="" class="nav__item-link login">
                         <div class="icon"><i class="fas fa-user"></i></div>
                         <div class="text">Login</div>
                     </a>
