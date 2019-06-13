@@ -13,12 +13,20 @@
 </head>
 <body id="body">
 
+<?php
+$_SESSION['items'][1] = true;
+$_SESSION['items'][2] = true;
+?>
+
     <div id="site">
         <?php require_once 'mvc/models/partials/header.php'; ?>
 
         <?php require_once 'mvc/models/partials/highlighted-products.php'; ?>
 
+        <?php require_once 'mvc/models/partials/portal-blocks.php'; ?>
+
         <?php require_once 'mvc/models/partials/footer.php'; ?>
+
     </div>
 
 </body>

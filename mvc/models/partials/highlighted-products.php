@@ -35,8 +35,6 @@
 
 <script>
 
-
-
     let products = new Vue({
         el: '#products',
         data: {
