@@ -17,7 +17,7 @@ class Session
 
     public function getShoppingCartItems()
     {
-        return !empty($this->session['items']) ? $this->session['items'] : "";
+        return !empty($this->session['shoppingCart']) ? $this->session['shoppingCart'] : "";
     }
 
 }

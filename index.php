@@ -14,8 +14,9 @@
 <body id="body">
 
 <?php
-$_SESSION['items'][1] = true;
-$_SESSION['items'][2] = true;
+session_destroy();
+
+$_SESSION['shoppingCart'] = ['1' => true];
 ?>
 
     <div id="site">
