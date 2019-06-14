@@ -27,19 +27,19 @@
                 {
                     background: 'image-1.jpg',
                     buttonColor: '#feca57',
-                    buttonText: 'Check out the new dyes',
+                    buttonText: 'Big sale',
                     buttonSrc: '/categories/dyes'
                 },
                 {
                     background: 'image-2.jpg',
                     buttonColor: '#feca57',
-                    buttonText: 'Premium items',
+                    buttonText: 'Check out the new dyes',
                     buttonSrc: '/categories/premium-items'
                 },
                 {
                     background: 'image-3.jpg',
                     buttonColor: '#feca57',
-                    buttonText: 'Big sale',
+                    buttonText: 'Premium items',
                     buttonSrc: '/categories/sale'
                 }
             ]
