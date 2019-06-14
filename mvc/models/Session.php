@@ -2,22 +2,9 @@
 
 class Session
 {
-
-    public $session;
-
-    public function __construct()
-    {
-        $this->session = $this->defineSession();
-    }
-
-    private function defineSession()
-    {
-        return $_SESSION;
-    }
-
     public function getShoppingCartItems()
     {
-        return !empty($this->session['shoppingCart']) ? $this->session['shoppingCart'] : "";
+        return !empty($_SESSION['shoppingCart']) ? $_SESSION['shoppingCart'] : "";
     }
 
 }

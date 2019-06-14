@@ -8,7 +8,6 @@ class Shoppingcart extends Session
 
     public function __construct()
     {
-        parent::__construct();
     }
 
     public function buildShoppingCartAmount(): String
@@ -43,18 +42,18 @@ class Shoppingcart extends Session
 
     public function productExistsInShoppingCart(): bool
     {
-        return $this->session[self::$shoppingCart][$this->articleNumber];
+        return !empty($_SESSION[self::$shoppingCart][$this->articleNumber]);
     }
 
     public function updateArticle( int $amount ): void
     {
-        $currentProductAmount = $this->session[self::$shoppingCart][$this->articleNumber]['amount'];
-        $this->session[self::$shoppingCart][$this->articleNumber]['amount'] = ($currentProductAmount + $amount);
+        $currentProductAmount = $_SESSION[self::$shoppingCart][$this->articleNumber]['amount'];
+        $_SESSION[self::$shoppingCart][$this->articleNumber]['amount'] = ($currentProductAmount + $amount);
     }
 
     public function addArticle( int $amount ): void
     {
-        $this->session[self::$shoppingCart][$this->articleNumber] = ['amount' => $amount];
+        $_SESSION[self::$shoppingCart][$this->articleNumber] = ['amount' => $amount];
     }
 
     public function deleteProductFromShoppingCart( String $articleNumber )
@@ -67,6 +66,6 @@ class Shoppingcart extends Session
 
     public function deleteArticle( String $articleNumber )
     {
-        unset($this->session[self::$shoppingCart][$articleNumber]);
+        unset($_SESSION[self::$shoppingCart][$articleNumber]);
     }
 }
