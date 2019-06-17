@@ -5,7 +5,7 @@
 
             <h4 class="title">Highlighted Products</h4>
 
-            <div class="product" v-for="(product, index) in products">
+            <a class="product" v-for="(product, index) in products" :href="product.urlSrc">
                 
                 <div class="image-wrap">
                     <img class="image" v-bind:src="'assets/images/products/' + product.imageUrl" />
@@ -27,7 +27,7 @@
                     <i class="fal fa-heart rate-icon"></i>
                 </div>
 
-            </div>
+            </a>
         </div>
 
     </div>
@@ -46,6 +46,7 @@
                     action: true,
                     actionPrice: "10",
                     limited: false,
+                    urlSrc: "/products/call-of-dawn",
                     category: "swords",
                     imageUrl: "call-of-dawn.png",
                     imageAlt: "Call of Dawn",
@@ -69,6 +70,7 @@
                     action: true,
                     originalPrice: "84.95",
                     limited: false,
+                    urlSrc: "/products/the-hunger",
                     category: "swords",
                     imageUrl: "the-hunger.png",
                     imageAlt: "The Hunger",
@@ -92,6 +94,7 @@
                     action: false,
                     originalPrice: "",
                     limited: false,
+                    urlSrc: "/products/stalkers-price",
                     category: "hammers",
                     imageUrl: "stalkers-price.png",
                     imageAlt: "Stalker's Price",
@@ -115,6 +118,7 @@
                     action: false,
                     originalPrice: "",
                     limited: true,
+                    urlSrc: "/products/infernos-fangs",
                     category: "chain blades",
                     imageUrl: "infernos-fangs.png",
                     imageAlt: "Inferno's Fangs",
