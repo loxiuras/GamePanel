@@ -1,34 +1,38 @@
 @import "../variables";
 
 .background-wrap {
-  background-image: url(../../../assets/images/header/background.jpg);
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
-  position: relative;
-  z-index: 1;
+  background-color: #212529;
 
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 600px;
-    height: 100vh;
+  &.image {
+    background-image: url(../../../assets/images/header/background.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
 
-  }
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 600px;
+      height: 100vh;
 
-  &::before {
-    left: 0;
-    background-image: linear-gradient(to right, rgba(0,0,0,1) , rgba(0,0,0,0));
-    z-index: 2;
-  }
+    }
 
-  &::after {
-    right: 0;
-    background-image: linear-gradient(to left, rgba(0,0,0,1) , rgba(0,0,0,0));
-    z-index: -1;
+    &::before {
+      left: 0;
+      background-image: linear-gradient(to right, rgba(0,0,0,1) , rgba(0,0,0,0));
+      z-index: 2;
+    }
+
+    &::after {
+      right: 0;
+      background-image: linear-gradient(to left, rgba(0,0,0,1) , rgba(0,0,0,0));
+      z-index: -1;
+    }
   }
 }
 

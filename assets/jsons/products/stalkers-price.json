@@ -1,0 +1,25 @@
+{
+  "name": "Stalker's Price",
+  "price": "34.95",
+  "priceType": "€",
+  "action": false,
+  "originalPrice": "",
+  "limited": false,
+  "urlSrc": "/products/stalkers-price",
+  "category": "hammers",
+  "imageUrl": "stalkers-price.png",
+  "imageAlt": "Stalker's Price",
+  "productUrl": "stalkers-price",
+  "type": "Hammer",
+  "damageType": "Blunt",
+  "effects": "+80 Umbral",
+  "amountOfCellSlots": 2,
+  "cellSlots": [
+    {
+      "name": "Power Cell"
+    },
+    {
+      "name": "Defence Cell"
+    }
+  ]
+}

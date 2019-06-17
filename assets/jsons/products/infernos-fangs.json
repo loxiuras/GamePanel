@@ -1,0 +1,25 @@
+{
+  "name": "Inferno's Fangs",
+  "price": "39.95",
+  "priceType": "€",
+  "action": false,
+  "originalPrice": "",
+  "limited": true,
+  "urlSrc": "/products/infernos-fangs",
+  "category": "chain blades",
+  "imageUrl": "infernos-fangs.png",
+  "imageAlt": "Inferno's Fangs",
+  "productUrl": "infernos-fangs",
+  "type": "Chain Blade",
+  "damageType": "Slashing",
+  "effects": "+80 Blaze",
+  "amountOfCellSlots": 2,
+  "cellSlots": [
+    {
+      "name": "Power Cell"
+    },
+    {
+      "name": "Power Cell"
+    }
+  ]
+}

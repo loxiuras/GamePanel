@@ -1,0 +1,25 @@
+{
+  "name": "The Hunger",
+  "price": "79.95",
+  "priceType": "€",
+  "action": true,
+  "originalPrice": "84.95",
+  "limited": false,
+  "urlSrc": "/products/the-hunger",
+  "category": "swords",
+  "imageUrl": "the-hunger.png",
+  "imageAlt": "The Hunger",
+  "productUrl": "the-hunger",
+  "type": "Sword",
+  "damageType": "Slashing",
+  "effects": "+80 Umbral",
+  "amountOfCellSlots": 2,
+  "cellSlots": [
+    {
+      "name": "Power Cell"
+    },
+    {
+      "name": "Utility Cell"
+    }
+  ]
+}

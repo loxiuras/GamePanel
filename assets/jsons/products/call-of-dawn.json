@@ -1,0 +1,25 @@
+{
+  "name": "Call of Dawn",
+  "price": "24.95",
+  "priceType": "€",
+  "action": true,
+  "actionPrice": "10",
+  "limited": false,
+  "urlSrc": "/products/call-of-dawn",
+  "category": "swords",
+  "imageUrl": "call-of-dawn.png",
+  "imageAlt": "Call of Dawn",
+  "productUrl": "call-of-down",
+  "type": "Sword",
+  "damageType": "Slashing",
+  "effects": "+80 Radiant",
+  "amountOfCellSlots": 2,
+  "cellSlots": [
+    {
+      "name": "Technique Cell"
+    },
+    {
+      "name": "Utility Cell"
+    }
+  ]
+}

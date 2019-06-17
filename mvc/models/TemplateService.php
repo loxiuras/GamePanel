@@ -6,6 +6,7 @@ class TemplateService
     protected $urlParts;
 
     private static $first = 0;
+    private static $second = 1;
     private static $templateKey = 'controller';
     private static $templateUrl = 'url';
 
@@ -59,6 +60,10 @@ class TemplateService
 
         switch($templateKey) {
             case 'product':
+
+                $partialData = [];
+                $partialData['productName'] = $this->urlParts[self::$second][self::$templateUrl];
+                require 'mvc/models/templates/productpage.php';
 
                 break;
             case 'category':

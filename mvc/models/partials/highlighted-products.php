@@ -37,6 +37,10 @@
 
     let products = new Vue({
         el: '#products',
+        methods:
+            {
+
+            },
         data: {
             products: [
                 {
@@ -50,6 +54,7 @@
                     category: "swords",
                     imageUrl: "call-of-dawn.png",
                     imageAlt: "Call of Dawn",
+                    productUrl: "call-of-down",
                     type: "Sword",
                     damageType: "Slashing",
                     effects: "+80 Radiant",
@@ -74,6 +79,7 @@
                     category: "swords",
                     imageUrl: "the-hunger.png",
                     imageAlt: "The Hunger",
+                    productUrl: 'the-hunger',
                     type: "Sword",
                     damageType: "Slashing",
                     effects: "+80 Umbral",
@@ -98,6 +104,7 @@
                     category: "hammers",
                     imageUrl: "stalkers-price.png",
                     imageAlt: "Stalker's Price",
+                    productUrl: 'stalkers-price',
                     type: "Hammer",
                     damageType: "Blunt",
                     effects: "+80 Umbral",
@@ -122,6 +129,7 @@
                     category: "chain blades",
                     imageUrl: "infernos-fangs.png",
                     imageAlt: "Inferno's Fangs",
+                    productUrl: 'infernos-fangs',
                     type: "Chain Blade",
                     damageType: "Slashing",
                     effects: "+80 Blaze",
