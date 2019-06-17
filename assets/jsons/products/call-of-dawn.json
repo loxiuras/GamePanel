@@ -21,5 +21,11 @@
     {
       "name": "Utility Cell"
     }
+  ],
+  "images": [
+    {
+      "imageUrl": "callofdawn/call-of-dawn.png",
+      "imageAlt": "Call of Dawn"
+    }
   ]
 }

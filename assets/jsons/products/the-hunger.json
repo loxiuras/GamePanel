@@ -21,5 +21,11 @@
     {
       "name": "Utility Cell"
     }
+  ],
+  "images": [
+    {
+      "imageUrl": "thehunger/the-hunger.png",
+      "imageAlt": "The Hunger"
+    }
   ]
 }
