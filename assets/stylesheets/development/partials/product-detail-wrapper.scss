@@ -21,8 +21,13 @@
         transform: translateY(-50%);
         width: 30px;
         height: 30px;
-        border: 1px solid #000;
+        border: 1px solid #eee;
         cursor: pointer;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
 
         &__prev {
           left: 10px;

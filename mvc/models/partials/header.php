@@ -10,7 +10,7 @@
         <div class="inner">
 
             <div class="logo-wrap">
-                <a href="index.php" class="logo">
+                <a href="//<?php echo $_SESSION['front']['host']; ?>" class="logo">
                     <i class="fas fa-dice-d8"></i>GamePanel
                 </a>
             </div>

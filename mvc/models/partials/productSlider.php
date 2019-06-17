@@ -10,5 +10,5 @@
     </template>
 
     <div class="arrow arrow__prev" v-on:click="decreaseSlider()"><i class="fal fa-long-arrow-left"></i></div>
-    <div class="arrow arrow__next" v-on:click="increaseSlider()"><i class="fal fa-long-arrow-left"></i></div>
+    <div class="arrow arrow__next" v-on:click="increaseSlider()"><i class="fal fa-long-arrow-right"></i></div>
 </div>

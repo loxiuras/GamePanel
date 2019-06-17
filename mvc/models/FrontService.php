@@ -11,9 +11,9 @@ class FrontService extends Session
         $this->FrontSession = $this->getFrontSession();
     }
 
-    public function setFrontPageSettings(): void
+    public function setFrontPageSettings()
     {
-        if(empty($this->FrontSession) && count($this->FrontSession)) {
+        if(empty($this->FrontSession) && !count($this->FrontSession)) {
             $this->setFrontSession();
         }
     }
