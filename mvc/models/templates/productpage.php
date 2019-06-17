@@ -26,6 +26,8 @@ $data = !empty($partialData) ? $partialData : "";
         $partialData = [];
         $partialData['product'] = $data['productName'];
         require 'mvc/models/partials/product-detail.php';
+
+        require_once 'mvc/models/partials/footer.php';
     ?>
 
 </div>

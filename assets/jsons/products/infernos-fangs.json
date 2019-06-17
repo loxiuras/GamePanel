@@ -7,7 +7,7 @@
   "limited": true,
   "urlSrc": "/products/infernos-fangs",
   "category": "chain blades",
-  "imageUrl": "infernos-fangs.png",
+  "imageUrl": "infernosfangs/infernos-fangs.png",
   "imageAlt": "Inferno's Fangs",
   "productUrl": "infernos-fangs",
   "type": "Chain Blade",
@@ -20,6 +20,18 @@
     },
     {
       "name": "Power Cell"
+    }
+  ],
+  "images": [
+    {
+      "imageUrl": "infernosfangs/infernos-fangs.png",
+      "imageAlt": "Inferno's Fangs",
+      "hidden": false
+    },
+    {
+      "imageUrl": "infernosfangs/smoldering-firebrand.png",
+      "imageAlt": "Smoldering Firebrand",
+      "hidden": true
     }
   ]
 }
