@@ -23,28 +23,49 @@ let product = new Vue({
     data: {
         product: '',
         currentSlider: 0,
-        amountOfImages: 0
+        amountOfImages: 0,
+        arrowPrev: false,
+        arrowNext: false
     },
     methods: {
         decreaseSlider: function ( ) {
             if( (this.currentSlider - 1) >= 0 ) {
                 let previousSlider = this.currentSlider;
                 this.currentSlider--;
-                console.log(this.currentSlider);
                 this.updateSlider(previousSlider);
+                this.updateSliderArrows();
             }
         },
         increaseSlider: function ( ) {
             if( (this.currentSlider - 1) < this.amountOfImages - 2 ) {
                 let previousSlider = this.currentSlider;
                 this.currentSlider++;
-                console.log(this.currentSlider);
                 this.updateSlider(previousSlider);
+                this.updateSliderArrows();
             }
         },
         updateSlider: function(previousSlider) {
             this.product.images[previousSlider].hidden = true;
             this.product.images[this.currentSlider].hidden = false;
+        },
+        updateSliderArrows: function() {
+
+            console.log(this.currentSlider);
+            console.log(product.amountOfImages);
+
+            if(0 !== this.currentSlider && (product.amountOfImages-1) !== this.currentSlider) {
+                product.arrowNext = true;
+                product.arrowPrev = true;
+            } else {
+                if(this.currentSlider === (product.amountOfImages-1)) {
+                    product.arrowNext = false;
+                    product.arrowPrev = true;
+                }
+                else if(this.currentSlider === 0) {
+                    product.arrowNext = true;
+                    product.arrowPrev = false;
+                }
+            }
         }
     }
 });
@@ -57,6 +78,10 @@ $.ajax({
         product.product = result;
         product.amountOfImages = result.images.length;
 
+        if(result.images.length > 1) {
+            product.arrowNext = true;
+        }
     }
 });
+
 </script>

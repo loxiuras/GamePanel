@@ -29,8 +29,13 @@
       "hidden": false
     },
     {
-      "imageUrl": "infernosfangs/smoldering-firebrand.png",
-      "imageAlt": "Smoldering Firebrand",
+      "imageUrl": "infernosfangs/inferno-preview.jpg",
+      "imageAlt": "Inferno preview",
+      "hidden": true
+    },
+    {
+      "imageUrl": "infernosfangs/inferno-preview-2.jpg",
+      "imageAlt": "Inferno preview second",
       "hidden": true
     }
   ]

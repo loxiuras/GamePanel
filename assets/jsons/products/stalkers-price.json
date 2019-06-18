@@ -25,7 +25,13 @@
   "images": [
     {
       "imageUrl": "stalkersprice/stalkers-price.png",
-      "imageAlt": "Stalker's Price"
+      "imageAlt": "Stalker's Price",
+      "hidden": false
+    },
+    {
+      "imageUrl": "stalkersprice/stalkers-price-render.png",
+      "imageAlt": "Stalker's Price Render",
+      "hidden": true
     }
   ]
 }
