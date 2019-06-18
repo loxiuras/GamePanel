@@ -4,7 +4,7 @@
     <template v-for="(image, index) in product.images">
         <template v-if="!image.hidden">
             <div class="slide" v-bind:style="{ backgroundImage: 'url(/assets/images/products/' + image.imageUrl + ')' }" :class="['index-' + index]" />
-
+                <div class="product__image-label" v-if="product.limited">Limited</div>
             </div>
         </template>
     </template>

@@ -8,8 +8,31 @@
 
             <?php
                 $partialData = $data;
-                require "mvc/models/partials/productSlider.php";
+                require "mvc/models/partials/product-slider.php";
             ?>
+
+            <div class="product-data">
+
+                <div class="product__title-wrap">
+                    <h3 class="product__title">{{ product.name }}</h3>
+                    <h5 class="product__subtitle">{{ product.subtitle }}</h5>
+                </div>
+
+                <div class="product__description"> {{ product.description }}</div>
+
+                <div class="product__price">
+                    <div class="price">{{ product.priceType }} {{ product.price }}</div>
+                </div>
+
+                <div class="product__note" v-if="product.limited">
+                    <span class="note"><b>Note</b>: This product is limited edition and will never be sold again!</span>
+                </div>
+
+                <div class="shopping-cart">
+                    <a href="" class="button">Add to shopping cart</a>
+                </div>
+                
+            </div>
 
         </div>
 
