@@ -29,7 +29,7 @@
                 </div>
 
                 <div class="shopping-cart">
-                    <a href="" class="button">Add to shopping cart</a>
+                    <a href="#" v-bind:data-article-number="product.articleNumber" v-bind:data-product-url="product.productUrl" class="button" id="addProductToShoppingCart">Add to shopping cart</a>
                 </div>
                 
             </div>

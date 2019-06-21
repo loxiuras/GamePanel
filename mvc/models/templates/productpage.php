@@ -32,5 +32,7 @@ $data = !empty($partialData) ? $partialData : "";
 
 </div>
 
+<script src="/assets/javascripts/modal.js"></script>
+<script src="/assets/javascripts/product.js"></script>
 </body>
 </html>

@@ -5,12 +5,13 @@ class Shoppingcart extends Session
 {
     private static $shoppingCart = 'shoppingCart';
     public $articleNumber;
+    public $productUrl;
 
     public function __construct()
     {
     }
 
-    public function buildShoppingCartAmount(): String
+    public function buildShoppingCartAmount(): string
     {
         $html = "";
         $shoppingCartItems = $this->getShoppingCartItems();
@@ -25,9 +26,10 @@ class Shoppingcart extends Session
         return $html;
     }
 
-    public function addProductToShoppingCart( String $articleNumber, int $amount ): void
+    public function addProductToShoppingCart( string $articleNumber, int $amount, string $productUrl=""): void
     {
-        $this->setAddedShoppingCartArticle( $articleNumber );
+        $this->setAddedShoppingCartArticleNumber( $articleNumber );
+        $this->setAddedShoppingCartProductUrl( $productUrl );
         if($this->productExistsInShoppingCart()) {
             $this->updateArticle( $amount );
         } else {
@@ -35,9 +37,14 @@ class Shoppingcart extends Session
         }
     }
 
-    public function setAddedShoppingCartArticle( String $articleNumber ): void
+    public function setAddedShoppingCartArticleNumber( string $articleNumber ): void
     {
         $this->articleNumber = !empty($articleNumber) ? $articleNumber : "";
+    }
+
+    public function setAddedShoppingCartProductUrl( string $productUrl ): void
+    {
+        $this->productUrl = !empty($productUrl) ? $productUrl : "";
     }
 
     public function productExistsInShoppingCart(): bool
@@ -53,18 +60,18 @@ class Shoppingcart extends Session
 
     public function addArticle( int $amount ): void
     {
-        $_SESSION[self::$shoppingCart][$this->articleNumber] = ['amount' => $amount];
+        $_SESSION[self::$shoppingCart][$this->articleNumber] = ['amount' => $amount, 'productUrl' => $this->productUrl];
     }
 
-    public function deleteProductFromShoppingCart( String $articleNumber )
+    public function deleteProductFromShoppingCart( string $articleNumber )
     {
-        $this->setAddedShoppingCartArticle( $articleNumber );
+        $this->setAddedShoppingCartArticleNumber( $articleNumber );
         if($this->productExistsInShoppingCart()) {
             $this->deleteArticle( $articleNumber );
         }
     }
 
-    public function deleteArticle( String $articleNumber )
+    public function deleteArticle( string $articleNumber )
     {
         unset($_SESSION[self::$shoppingCart][$articleNumber]);
     }

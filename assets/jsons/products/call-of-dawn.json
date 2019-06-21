@@ -2,6 +2,7 @@
   "name": "Call of Dawn",
   "subtitle": "Nights silence echo",
   "description": "The Call of Dawn is a craftable weapon in Dauntless. It is crafted from Rezakiri reagents.",
+  "articleNumber": "CAOFDA",
   "price": "24.95",
   "priceType": "€",
   "action": true,
